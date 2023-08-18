@@ -16,8 +16,7 @@ public:
 
     // скопировать строку str
     void Copy(const String copyStr) {
-        string v = str;
-        copyStr.str;
+        str = copyStr.str;
     }
 
     // начиная с индекса start, найти положение символа ch
@@ -40,18 +39,32 @@ public:
 
     // выделение подстроки, начиная с индекса index; 
     // count – длина, выделяемой подстроки
-    //String Substr(int index, int count) {}
+    String Substr(int index, int count) {
+        int i;
+        String result (*this);
+        result.str = "";
+        for (i = index; i < index+count; ++i) {
+            result.str += str[i];
+        }
+        return result;
+    }
 
     // удаление подстроки, начиная с индекса index; 
     // count – длина удаляемой подстроки
-    //void Remove(int index, int count) {}
+    void Remove(int index, int count) {
+        str.erase(index, count);
+    }
 
     // 	вставка строки в стиле языка C в строку, для которой вызывается 
     // метод Insert; index – позиция, перед которой выполняется вставка
-    //void Insert(char* s, int index) {}
+    void Insert(char *s, int index) {
+        str.insert(index, s);
+    }
 
     // метод для вывода строки на экран дисплея
-    //void print() {}
+    void print() {
+        cout << str << endl;
+    }
 };
 
 int main() {
@@ -63,15 +76,30 @@ int main() {
     cout << ahah.Length() << endl;
 
     //----------------------------
-    //String str2;
-    //ahah.Copy(str2);
-    //cout << str2.str << endl;
+    String blupblup;
+    blupblup.str = "I don't love SPBGUT";
+    ahah.Copy(blupblup);
+    cout << ahah.str << endl;
 
     //----------------------------
     cout << ahah.Find('T', 1) << endl;
 
     //----------------------------
     cout << ahah.FindLast('P') << endl;
+
+    //----------------------------
+    cout << ahah.Substr(2, 4).str << endl;
+    
+    //----------------------------
+    ahah.Remove(2, 4);
+    cout << ahah.str << endl;
+
+    //----------------------------
+    ahah.Insert("love", 2);
+    cout << ahah.str << endl;
+
+    //----------------------------
+    cout << "And finally -> "; ahah.print();
 
 
     return 0;

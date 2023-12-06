@@ -1,0 +1,89 @@
+ПРОВЕРКА COne
+Конструктор умолчания
+n = 0
+s = 
+Конструктор с параметром
+n = 13243546
+s = Text
+Конструктор копирования
+n = 13243546
+s = Text
+Перегруженный оператор присваивания
+COne was deleted.
+COne was deleted.
+n = 0
+s = 
+Методы доступа
+n = 777
+s = OTHER
+
+ПРОВЕРКА CTwo
+Конструктор умолчания
+s = 
+n = 0
+s = 
+Конструктор с параметром
+s = Rejkyavik
+n = 777
+s = OTHER
+Конструктор копирования
+s = Rejkyavik
+n = 777
+s = OTHER
+Перегруженный оператор присваивания
+s = Rejkyavik
+n = 777
+s = OTHER
+Методы доступа
+COne was deleted.
+COne was deleted.
+COne was deleted.
+s = Iceland
+n = 13243546
+s = Text
+ПРОВЕРКА CThree
+Конструктор умолчания
+b = 0
+s = 
+n = 0
+s = 
+Конструктор с параметрами
+b = 3.14
+s = ahaha
+n = 0
+s = 
+Конструктор копирования
+b = 3.14
+s = ahaha
+n = 0
+s = 
+Перегруженный оператор присваивания
+b = 3.14
+s = ahaha
+n = 0
+s = 
+CThree was deleted.
+CTwo was deleted.
+COne was deleted.
+CThree was deleted.
+CTwo was deleted.
+COne was deleted.
+CThree was deleted.
+CTwo was deleted.
+COne was deleted.
+COne was deleted.
+CThree was deleted.
+CTwo was deleted.
+COne was deleted.
+COne was deleted.
+CTwo was deleted.
+COne was deleted.
+CTwo was deleted.
+COne was deleted.
+CTwo was deleted.
+COne was deleted.
+CTwo was deleted.
+COne was deleted.
+COne was deleted.
+COne was deleted.
+COne was deleted.
